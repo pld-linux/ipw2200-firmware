@@ -28,11 +28,12 @@ przeczytaæ licencjê.
 %setup -q -c
 gunzip -c ipw2200-fw-%{version}.tgz | tar -xf -
 
+cp %{SOURCE1} .
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}/firmware
 install -d $RPM_BUILD_ROOT/lib/firmware
-install -d $RPM_BUILD_ROOT%{_docdir}/ipw2200-firmware
 
 install -p *.fw $RPM_BUILD_ROOT%{_sysconfdir}/firmware
 cp -df LICENSE $RPM_BUILD_ROOT%{_sysconfdir}/firmware/ipw2200-LICENSE
@@ -40,14 +41,13 @@ cd $RPM_BUILD_ROOT%{_sysconfdir}/firmware
 for file in *; do
 	ln -s %{_sysconfdir}/firmware/$file $RPM_BUILD_ROOT/lib/firmware
 done
-install -p %{SOURCE1} $RPM_BUILD_ROOT%{_docdir}/ipw2200-firmware
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc $RPM_BUILD_ROOT/%{_docdir}/ipw2200-firmware/*
+%doc ipw2x00_firmware_licence_Q_A.txt
 %{_sysconfdir}/firmware/ipw2200-LICENSE
 %{_sysconfdir}/firmware/*.fw
 /lib/firmware/*.fw
