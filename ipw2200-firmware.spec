@@ -32,7 +32,7 @@ gunzip -c ipw2200-fw-%{version}.tgz | tar -xf -
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}/firmware
 install -d $RPM_BUILD_ROOT/lib/firmware
-install -d $RPM_BUILD_ROOT/%{_docdir}/ipw2200-firmware
+install -d $RPM_BUILD_ROOT%{_docdir}/ipw2200-firmware
 
 install -p *.fw $RPM_BUILD_ROOT%{_sysconfdir}/firmware
 cp -df LICENSE $RPM_BUILD_ROOT%{_sysconfdir}/firmware/ipw2200-LICENSE
@@ -40,7 +40,7 @@ cd $RPM_BUILD_ROOT%{_sysconfdir}/firmware
 for file in *; do
 	ln -s %{_sysconfdir}/firmware/$file $RPM_BUILD_ROOT/lib/firmware
 done
-install -p %{SOURCE1} $RPM_BUILD_ROOT/%{_docdir}/ipw2200-firmware/
+install -p %{SOURCE1} $RPM_BUILD_ROOT%{_docdir}/ipw2200-firmware
 
 %clean
 rm -rf $RPM_BUILD_ROOT
