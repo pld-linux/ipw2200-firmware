@@ -1,0 +1,64 @@
+X-UIDL: 1097013457.12632.smtp.mta-2.poczta.srv-NOSPAM,S=2805
+X-Mozilla-Status: 1011
+X-Mozilla-Status2: 00000000
+Return-Path: <jketreno@linux.intel.com>
+Delivered-To: zawadaa@wp.pl
+Received: (wp-smtpd smtp.wp.pl 12600 invoked from network); 5 Oct 2004 23:57:36 +0200
+Received: from fmr05.intel.com (HELO hermes.jf.intel.com) ([134.134.136.6])
+          (envelope-sender <jketreno@linux.intel.com>)
+          by smtp.wp.pl (WP-SMTPD) with SMTP
+          for <zawadaa@wp.pl>; 5 Oct 2004 23:57:36 +0200
+Received-SPF: none (smtp.wp.pl: domain at linux.intel.com does not designate permitted sender hosts)
+Received: from petasus.jf.intel.com (petasus.jf.intel.com [10.7.209.6])
+	by hermes.jf.intel.com (8.12.9-20030918-01/8.12.9/d: major-outer.mc,v 1.15 2004/01/30 18:16:28 root Exp $) with ESMTP id i95M0ujg009351
+	for <zawadaa@wp.pl>; Tue, 5 Oct 2004 22:00:56 GMT
+Received: from linux.intel.com (hdlrvguser-49.hd.intel.com [10.127.52.68])
+	by petasus.jf.intel.com (8.12.9-20030918-01/8.12.9/d: major-inner.mc,v 1.11 2004/07/29 22:51:53 root Exp $) with ESMTP id i95M0kls031472
+	for <zawadaa@wp.pl>; Tue, 5 Oct 2004 22:00:50 GMT
+Message-ID: <416318C5.4070600@linux.intel.com>
+Date: Tue, 05 Oct 2004 16:57:25 -0500
+From: James Ketrenos <jketreno@linux.intel.com>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.6b) Gecko/20031205 Thunderbird/0.4
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Andrzej Zawadzki <zawadaa@wp.pl>
+Subject: Re: [Fwd: Re: ipw2100/2200 firmware license question]
+References: <41630441.4000300@wp.pl> <416307D9.7040403@linux.intel.com> <4163157B.1030608@wp.pl>
+In-Reply-To: <4163157B.1030608@wp.pl>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Scanned-By: MIMEDefang 2.31 (www . roaringpenguin . com / mimedefang)
+X-WP-AV: skaner antywirusowy poczty Wirtualnej Polski S. A.
+X-WP-AS1: NO Body=1 Fuz1=1 Fuz2=1                          
+X-WP-AS2: NO 0.945073  
+X-WP-AS3: NO       
+X-WP-SPAM: NO 
+
+Andrzej Zawadzki wrote:
+> James Ketrenos wrote:
+> 
+>> Andrzej Zawadzki wrote:
+>>
+>>> Hello James!
+>>> First, thank You for a great job!
+>>> Second, I have a question about firmware:
+>>> Can distros, like my non profit distro http://www.pld-linux.org/ 
+>>> includ firmware into rpms?
+>>
+>> Yes.  As Axel stated below, placing the message in the RPM 
+>> description, and a copy of the LICENSE in the same location as the 
+>> firmware is
+> 
+>                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> Hm can I place LICENSE in /usr/share/doc/ipw2200-firmware/ ?
+> Most licenses are there.
+
+It really needs to be in the same location as the firmware so that users are 
+more likely than not to find the license in the event they look for the specific 
+fw files.  You can rename the LICENSE to ipw2200-LICENSE if there is a 
+namespace collision in the firmware directory.
+
+James
+
+
+
