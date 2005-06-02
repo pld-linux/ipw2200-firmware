@@ -9,18 +9,18 @@ Source0:	ipw2200-fw-%{version}.tgz
 # Source0-md5:	487ba63b1bf98bc1e38059b6d3abea44
 Source1:	ipw2x00_firmware_licence_Q_A.txt
 URL:		http://ipw2200.sourceforge.net/firmware.php
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This package contains the firmware for the ipw-2200 driver. Usage of
-the firmware is subject to the terms contained in /lib/ipw2200-LICENSE.
-Please read the license carefully.
+the firmware is subject to the terms contained in
+/lib/firmware/ipw2200-LICENSE. Please read the license carefully.
 
 %description -l pl
 Ten pakiet zawiera firmware dla sterownika ipw-2200. Mo¿na go u¿ywaæ
-na warunkach zawartych w pliku /lib/ipw2200-LICENSE.
-Proszê uwa¿nie przeczytaæ licencjê.
+na warunkach zawartych w pliku /lib/firmware/ipw2200-LICENSE. Proszê
+uwa¿nie przeczytaæ licencjê.
 
 %prep
 %setup -q -c
