@@ -14,12 +14,12 @@ BuildArch:	noarch
 
 %description
 This package contains the firmware for the ipw-2200 driver. Usage of
-the firmware is subject to the terms contained in /%{_lib}/ipw2200-LICENSE.
+the firmware is subject to the terms contained in /lib/ipw2200-LICENSE.
 Please read the license carefully.
 
 %description -l pl
 Ten pakiet zawiera firmware dla sterownika ipw-2200. Mo¿na go u¿ywaæ
-na warunkach zawartych w pliku /%{_lib}/ipw2200-LICENSE.
+na warunkach zawartych w pliku /lib/ipw2200-LICENSE.
 Proszê uwa¿nie przeczytaæ licencjê.
 
 %prep
@@ -30,10 +30,10 @@ cp %{SOURCE1} .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_lib}/firmware
+install -d $RPM_BUILD_ROOT/lib/firmware
 
-install -p *.fw $RPM_BUILD_ROOT/%{_lib}/firmware
-cp -df LICENSE $RPM_BUILD_ROOT/%{_lib}/firmware/ipw2200-LICENSE
+install -p *.fw $RPM_BUILD_ROOT/lib/firmware
+cp -df LICENSE $RPM_BUILD_ROOT/lib/firmware/ipw2200-LICENSE
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -41,5 +41,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ipw2x00_firmware_licence_Q_A.txt
-/%{_lib}/firmware/ipw2200-LICENSE
-/%{_lib}/firmware/*.fw
+/lib/firmware/ipw2200-LICENSE
+/lib/firmware/*.fw
