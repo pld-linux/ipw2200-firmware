@@ -1,12 +1,12 @@
 Summary:	Firmware for the Intel(R) PRO/Wireless 2200 Driver
 Summary(pl):	Firmware dla sterownika do kart Intel(R) PRO/Wireless 2200
 Name:		ipw2200-firmware
-Version:	2.3
+Version:	2.4
 Release:	1
 License:	distributable
 Group:		System Environment/Kernel
 Source0:	ipw2200-fw-%{version}.tgz
-# Source0-md5:	487ba63b1bf98bc1e38059b6d3abea44
+# Source0-md5:	a5bc066d23900852a04711c5d33987d4
 Source1:	ipw2x00_firmware_licence_Q_A.txt
 URL:		http://ipw2200.sourceforge.net/firmware.php
 BuildArch:	noarch
