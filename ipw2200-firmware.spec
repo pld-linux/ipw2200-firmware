@@ -1,3 +1,8 @@
+#
+# TODO:		- add the license to the firmware directory
+#		- prepare multiversion 2.4 & 3.0 packages or %name24 for out of kernel 
+#		  ipw2200 module (the one from 2.6.16.2 needs 2.4 firmware)
+#
 Summary:	Firmware for the Intel(R) PRO/Wireless 2200 Driver
 Summary(pl):	Firmware dla sterownika do kart Intel(R) PRO/Wireless 2200
 Name:		ipw2200-firmware
