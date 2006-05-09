@@ -12,12 +12,12 @@ Group:		System Environment/Kernel
 Source0:	http://bughost.org/firmware/ipw2200-fw-%{version}.tgz 
 # Source0-md5:	34a5ed3702006f5470ebfd513e04d9eb
 Source1:	ipw2x00_firmware_licence_Q_A.txt
-Source2:	http://bughost.org/firmware/ipw2200-fw-2.2.tgz
-# Source2-md5:	6892abab05d5391c08933e19b49b86b5
-Source3:	http://bughost.org/firmware/ipw2200-fw-2.3.tgz
-# Source3-md5:	487ba63b1bf98bc1e38059b6d3abea44
-Source4:	http://bughost.org/firmware/ipw2200-fw-2.4.tgz
-# Source4-md5:	a5bc066d23900852a04711c5d33987d4
+Source22:	http://bughost.org/firmware/ipw2200-fw-2.2.tgz
+# Source22-md5:	6892abab05d5391c08933e19b49b86b5
+Source23:	http://bughost.org/firmware/ipw2200-fw-2.3.tgz
+# Source23-md5:	487ba63b1bf98bc1e38059b6d3abea44
+Source24:	http://bughost.org/firmware/ipw2200-fw-2.4.tgz
+# Source24-md5:	a5bc066d23900852a04711c5d33987d4
 URL:		http://ipw2200.sourceforge.net/firmware.php
 BuildArch:	noarch
 Provides:	ipw2200-firmware = 2.2
@@ -37,7 +37,7 @@ na warunkach zawartych w pliku /lib/firmware/ipw2200-LICENSE. Proszê
 uwa¿nie przeczytaæ licencjê.
 
 %prep
-%setup -q -c -a2 -a3 -a4
+%setup -q -c -a22 -a23 -a24
 cp %{SOURCE1} .
 
 %install
