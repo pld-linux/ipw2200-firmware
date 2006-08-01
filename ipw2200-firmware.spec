@@ -18,11 +18,14 @@ Source23:	http://bughost.org/firmware/ipw2200-fw-2.3.tgz
 # Source23-md5:	487ba63b1bf98bc1e38059b6d3abea44
 Source24:	http://bughost.org/firmware/ipw2200-fw-2.4.tgz
 # Source24-md5:	a5bc066d23900852a04711c5d33987d4
+Source25:	http://bughost.org/firmware/ipw2200-fw-3.0.tgz
+# Source25-md5:	a5bc066d23900852a04711c5d33987d4
 URL:		http://ipw2200.sourceforge.net/firmware.php
 BuildArch:	noarch
 Provides:	ipw2200-firmware = 2.2
 Provides:	ipw2200-firmware = 2.3
 Provides:	ipw2200-firmware = 2.4
+Provides:	ipw2200-firmware = 3.0
 Obsoletes:	ipw2200-firmware2.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,7 +40,7 @@ na warunkach zawartych w pliku /lib/firmware/ipw2200-LICENSE. Proszê
 uwa¿nie przeczytaæ licencjê.
 
 %prep
-%setup -q -c -a22 -a23 -a24
+%setup -q -c -a22 -a23 -a24 -a25
 cp %{SOURCE1} .
 
 %install
