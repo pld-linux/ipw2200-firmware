@@ -3,7 +3,7 @@
 # - separate old firmware's to some compat subpackage?
 #
 Summary:	Firmware for the Intel(R) PRO/Wireless 2200 Driver
-Summary(pl):	Firmware dla sterownika do kart Intel(R) PRO/Wireless 2200
+Summary(pl.UTF-8):   Firmware dla sterownika do kart Intel(R) PRO/Wireless 2200
 Name:		ipw2200-firmware
 Version:	3.0
 Release:	2
@@ -34,10 +34,10 @@ This package contains the firmware for the ipw-2200 driver. Usage of
 the firmware is subject to the terms contained in
 /lib/firmware/ipw2200-LICENSE. Please read the license carefully.
 
-%description -l pl
-Ten pakiet zawiera firmware dla sterownika ipw-2200. Mo¿na go u¿ywaæ
-na warunkach zawartych w pliku /lib/firmware/ipw2200-LICENSE. Proszê
-uwa¿nie przeczytaæ licencjê.
+%description -l pl.UTF-8
+Ten pakiet zawiera firmware dla sterownika ipw-2200. MoÅ¼na go uÅ¼ywaÄ‡
+na warunkach zawartych w pliku /lib/firmware/ipw2200-LICENSE. ProszÄ™
+uwaÅ¼nie przeczytaÄ‡ licencjÄ™.
 
 %prep
 %setup -q -c -a22 -a23 -a24 -a30
