@@ -19,7 +19,7 @@ Source23:	http://bughost.org/firmware/ipw2200-fw-2.3.tgz
 Source24:	http://bughost.org/firmware/ipw2200-fw-2.4.tgz
 # Source24-md5:	a5bc066d23900852a04711c5d33987d4
 Source31:	http://bughost.org/firmware/ipw2200-fw-3.1.tgz
-# Source30-md5:	34a5ed3702006f5470ebfd513e04d9eb
+# Source31-md5:	eaba788643c7cc7483dd67ace70f6e99
 URL:		http://ipw2200.sourceforge.net/firmware.php
 BuildArch:	noarch
 Provides:	ipw2200-firmware = 2.2
