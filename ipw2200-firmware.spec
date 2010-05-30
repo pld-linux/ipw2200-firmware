@@ -5,8 +5,8 @@
 Summary:	Firmware for the Intel(R) PRO/Wireless 2200 Driver
 Summary(pl.UTF-8):	Firmware dla sterownika do kart Intel(R) PRO/Wireless 2200
 Name:		ipw2200-firmware
-Version:	3.0
-Release:	2
+Version:	3.1
+Release:	0.1
 License:	distributable
 Group:		System Environment/Kernel
 Source0:	http://bughost.org/firmware/ipw2200-fw-%{version}.tgz 
@@ -18,14 +18,14 @@ Source23:	http://bughost.org/firmware/ipw2200-fw-2.3.tgz
 # Source23-md5:	487ba63b1bf98bc1e38059b6d3abea44
 Source24:	http://bughost.org/firmware/ipw2200-fw-2.4.tgz
 # Source24-md5:	a5bc066d23900852a04711c5d33987d4
-Source30:	http://bughost.org/firmware/ipw2200-fw-3.0.tgz
+Source31:	http://bughost.org/firmware/ipw2200-fw-3.1.tgz
 # Source30-md5:	34a5ed3702006f5470ebfd513e04d9eb
 URL:		http://ipw2200.sourceforge.net/firmware.php
 BuildArch:	noarch
 Provides:	ipw2200-firmware = 2.2
 Provides:	ipw2200-firmware = 2.3
 Provides:	ipw2200-firmware = 2.4
-Provides:	ipw2200-firmware = 3.0
+Provides:	ipw2200-firmware = 3.1
 Obsoletes:	ipw2200-firmware2.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -40,7 +40,7 @@ na warunkach zawartych w pliku /lib/firmware/ipw2200-LICENSE. Proszę
 uważnie przeczytać licencję.
 
 %prep
-%setup -q -c -a22 -a23 -a24 -a30
+%setup -q -c -a22 -a23 -a24 -a31
 cp %{SOURCE1} .
 
 %install
