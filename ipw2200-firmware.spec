@@ -10,7 +10,7 @@ Release:	0.1
 License:	distributable
 Group:		System Environment/Kernel
 Source0:	http://bughost.org/firmware/ipw2200-fw-%{version}.tgz 
-# Source0-md5:	34a5ed3702006f5470ebfd513e04d9eb
+# Source0-md5:	eaba788643c7cc7483dd67ace70f6e99
 Source1:	ipw2x00_firmware_licence_Q_A.txt
 Source22:	http://bughost.org/firmware/ipw2200-fw-2.2.tgz
 # Source22-md5:	6892abab05d5391c08933e19b49b86b5
